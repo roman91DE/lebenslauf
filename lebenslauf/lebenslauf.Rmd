@@ -2,7 +2,7 @@
 title: Lebenslauf
 name: Roman T. Hoehn
 position: "B.Sc. Wirtschaftspädagogik"
-address: "Rathenauplatz 6, 65203 Wiesbaden"
+address: "Rödelstück 26, 55129 Mainz"
 phone: "Mobil: +49 178 4076394"
 email: "E-Mail: rohoehn123@gmail.com"
 github: "Github: roman91DE"
@@ -21,8 +21,8 @@ library(vitae)
 
 ## Über mich
 
- * **Masterstudent der Wirtschaftspädagogik mit Fokus auf Programmierung und maschinellem Lernen**
- * **Langjährige Erfahrung als Dozent für IT und BWL in der Erwachsenenbildung**
+ * **Masterstudent der Wirtschaftspädagogik mit Fokus auf Programmierung, Datascience und Metaheuristiken**
+ * **Langjährige Erfahrung als freiberuflicher Dozent für IT und BWL**
  
 ## Aus- und Weiterbildung
 
@@ -30,7 +30,7 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Master of Science - Wirtschaftspädagogik", "seit 2018", "Johannes Gutenberg-Universität", "Mainz, Deutschland",
+  "Master of Science - Wirtschaftspädagogik", "2018-2023 (vorraussichtlich)", "Johannes Gutenberg-Universität", "Mainz, Deutschland",
   "Bachelor of Science - Wirtschaftspädagogik", "2014-2018", "Johannes Gutenberg-Universität", "Mainz, Deutschland",
   "Kaufmännische Ausbildung - Bürokaufmann", "2012-2014", "A. Panzer GmbH", "Wiesbaden, Deutschland",
   "Allgemeine Hochschulreife", "2007-2010", "Martin-Niemöller-Schule", "Wiesbaden, Deutschland"
@@ -44,9 +44,11 @@ tribble(
 library(tibble)
 tribble(
   ~ Position, ~ Year, ~ Institution, ~ Where, ~Description,
-  "Kaufmännischer Fachdozent", "seit 2018", "Kölner Wirtschaftsfachschule - Wifa-Gruppe - GmbH", "Mainz/Darmstadt, Deutschland", " Schwerpunkte: Office/IT, Volks- und Betriebswirtschaftslehre für kaufmännische Ausbildungsberufe",
+  "Freiberuflicher kaufmännischer Fachdozent", "2018-2023", "Kölner Wirtschaftsfachschule - Wifa-Gruppe - GmbH", "Mainz/Darmstadt, Deutschland", " Schwerpunkte: Office/IT, Volks- und Betriebswirtschaftslehre für kaufmännische Ausbildungsberufe",
   
-"Wissenschaftliche Hilfskraft mit Abschluss", "2018-2019", "Johannes Gutenberg-Universität", "Mainz, Deutschland", "Programmierung und deskriptive Auswertung von Online Umfragen, Datenbankmanagement, Recherche- und Akquisearbeiten"
+"Wissenschaftliche Hilfskraft mit Abschluss", "2018-2019", "Johannes Gutenberg-Universität", "Mainz, Deutschland", "Programmierung und deskriptive Auswertung von Online Umfragen, Datenbankmanagement, Recherche- und Akquisearbeiten",
+
+"Buchhalter", "seit 2018", "MUT GbR", "Wiesbden, Deutschland", "Buchhaltung für das online Portal www.lernfoerderung.de und diverse Dienstleistungen im Bereich Social Media Marketing"
 ) %>% 
   detailed_entries(Position, Year, Institution, Where, Description)
 ```
@@ -56,10 +58,14 @@ tribble(
 ## Fähigkeiten
 
 ```{r}
-library(dplyr)
-knitr::write_bib(c("vitae", "tibble"), "packages.bib")
-
-bibliography_entries("packages.bib") %>%
-  arrange(desc(author$family), issued)
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Master of Science - Wirtschaftspädagogik", "2018-2023 (vorraussichtlich)", "Johannes Gutenberg-Universität", "Mainz, Deutschland",
+  "Bachelor of Science - Wirtschaftspädagogik", "2014-2018", "Johannes Gutenberg-Universität", "Mainz, Deutschland",
+  "Kaufmännische Ausbildung - Bürokaufmann", "2012-2014", "A. Panzer GmbH", "Wiesbaden, Deutschland",
+  "Allgemeine Hochschulreife", "2007-2010", "Martin-Niemöller-Schule", "Wiesbaden, Deutschland"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
 ```
 
