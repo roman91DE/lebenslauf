@@ -48,7 +48,7 @@ tribble(
   
 "Wissenschaftliche Hilfskraft mit Abschluss", "2018-2019", "Johannes Gutenberg-Universität", "Mainz, Deutschland", "Programmierung und deskriptive Auswertung von Online Umfragen, Datenbankmanagement, Recherche- und Akquisearbeiten",
 
-"Buchhalter", "seit 2018", "MUT GbR", "Wiesbden, Deutschland", "Buchhaltung für das online Portal www.lernfoerderung.de und diverse Dienstleistungen im Bereich Social Media Marketing"
+"Buchhalter", "seit 2018", "MUT GbR", "Wiesbaden, Deutschland", "Buchhaltung für das online Portal www.lernfoerderung.de und diverse Dienstleistungen im Bereich Social Media Marketing"
 ) %>% 
   detailed_entries(Position, Year, Institution, Where, Description)
 ```
@@ -57,15 +57,16 @@ tribble(
 
 ## Fähigkeiten
 
-```{r}
-library(tibble)
-tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Master of Science - Wirtschaftspädagogik", "2018-2023 (vorraussichtlich)", "Johannes Gutenberg-Universität", "Mainz, Deutschland",
-  "Bachelor of Science - Wirtschaftspädagogik", "2014-2018", "Johannes Gutenberg-Universität", "Mainz, Deutschland",
-  "Kaufmännische Ausbildung - Bürokaufmann", "2012-2014", "A. Panzer GmbH", "Wiesbaden, Deutschland",
-  "Allgemeine Hochschulreife", "2007-2010", "Martin-Niemöller-Schule", "Wiesbaden, Deutschland"
-) %>% 
-  detailed_entries(Degree, Year, Institution, Where)
-```
+### IT
+
+* Programmierung in Python und relevanten Bibliotheken für Datenauswertung, Datenvisualisierung, maschinelles Lernen (primäre Programmiersprache)
+* Erfahrung im Umgang mit Linux/Unix Tools und Systemen
+* Fokus auf Datensicherheit
+* Weitere Programmiersprachen (Auszug): C++, Bash, Go, Typescript 
+
+
+### Betriebswirtschaftslehre
+
+* Großes Interesse an finanzieller 
+
 
