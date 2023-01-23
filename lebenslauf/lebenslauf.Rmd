@@ -60,6 +60,7 @@ tribble(
 ### IT
 
 * Programmierung in Python und relevanten Bibliotheken für Datenauswertung, Datenvisualisierung, maschinelles Lernen (primäre Programmiersprache)
+* Erfahrung evolutionäre Methoden des maschinellen Lernens
 * Erfahrung im Umgang mit Linux/Unix Tools und Systemen
 * Fokus auf Datensicherheit
 * Weitere Programmiersprachen (Auszug): C++, Bash, Go, Typescript 
