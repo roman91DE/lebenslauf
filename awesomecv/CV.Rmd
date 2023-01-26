@@ -1,5 +1,5 @@
 ---
-name: "Hoehn,"
+name: "Höhn,"
 surname: "Roman T."
 position: "B.Sc. Wirtschaftspaedagogik"
 address: "Roedelstueck 26, 55129 Mainz"
@@ -11,7 +11,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::awesomecv:
     page_total: true
-    #show_footer: true
+    #show_footer: false
 ---
 
 ```{r setup, include=FALSE}
@@ -26,9 +26,9 @@ library(vitae)
 library(tibble)
 
 df_aboutme = read.csv("../data/aboutme.csv", sep="?", quote = "\"")
-print(df_aboutme)
-# df_aboutme  %>%
-#   detailed_entries("Stärken")
+
+df_aboutme  %>%
+  detailed_entries(Stärken)
 ```
 
 # Ausbildung
@@ -53,5 +53,15 @@ df_work  %>%
   detailed_entries(Tätigkeit, Jahr, Institution, Ort)
 ```
 
+# Forschungsarbeiten
+
+```{r}
+library(tibble)
+
+df_thesis = read.csv("../data/thesis.csv", sep="?", quote = "\"")
+
+df_thesis  %>%
+  detailed_entries(Fachbereich,Link,Thema,Art)
+```
 
 
