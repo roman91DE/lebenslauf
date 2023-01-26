@@ -1,0 +1,57 @@
+---
+name: "Hoehn,"
+surname: "Roman T."
+position: "B.Sc. Wirtschaftspaedagogik"
+address: "Roedelstueck 26, 55129 Mainz"
+phone: "Mobil: +49 178 4076394"
+email: "rohoehn123@gmail.com"
+profilepic: "../data/pic.jpeg"
+github: roman91DE
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    page_total: true
+    #show_footer: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+
+# Über mich
+
+```{r}
+library(tibble)
+
+df_aboutme = read.csv("../data/aboutme.csv", sep="?", quote = "\"")
+print(df_aboutme)
+# df_aboutme  %>%
+#   detailed_entries("Stärken")
+```
+
+# Ausbildung
+
+```{r}
+library(tibble)
+
+df_education = read.csv("../data/education.csv", sep="?", quote = "\"")
+
+df_education  %>%
+  detailed_entries(Abschluss, Jahr, Institution, Ort)
+```
+
+# Berufserfahrung
+
+```{r}
+library(tibble)
+
+df_work = read.csv("../data/work.csv", sep="?", quote = "\"")
+
+df_work  %>%
+  detailed_entries(Tätigkeit, Jahr, Institution, Ort)
+```
+
+
+
