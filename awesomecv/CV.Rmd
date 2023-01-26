@@ -1,6 +1,6 @@
 ---
 name: "Höhn,"
-surname: "Roman T."
+surname: "Roman"
 position: "B.Sc. Wirtschaftspädagogik"
 address: "Roedelstueck 26, 55129 Mainz"
 phone: "Mobil: +49 178 4076394"
@@ -10,8 +10,8 @@ github: roman91DE
 date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::awesomecv:
-    page_total: true
-    #show_footer: false
+  page_total: false
+  show_footer: false
 ---
 
 ```{r setup, include=FALSE}
