@@ -7,7 +7,7 @@ address: "Roedelstueck 26, 55129 Mainz"
 phone: "Mobil: +49 178 4076394"
 email: "rohoehn123@gmail.com"
 profilepic: "../data/pic.jpeg"
-headcolor: "414141"
+#headcolor: "1B05F6"
 github: roman91DE
 date: "`r format(Sys.time(), '%B %Y')`"
 output: 
