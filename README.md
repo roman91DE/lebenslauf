@@ -1,6 +1,6 @@
 # Curriculumn Vitae
 
-This is a repository for my personal CV built with the R package `vitae` [Link](https://github.com/mitchelloharawild/vitae)
+This is a repository for my personal CV built with the R package [`vitae`](https://github.com/mitchelloharawild/vitae)
 
 ## Docs available:
 
