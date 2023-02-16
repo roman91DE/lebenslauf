@@ -1,0 +1,69 @@
+---
+name: "Roman Höhn"
+position: "B.Sc. Wirtschaftspädagogik"
+address: "Roedelstueck 26, 55129 Mainz"
+phone: "Mobil: +49 178 4076394"
+email: "rohoehn123@gmail.com"
+profilepic: "../data_de/pic.jpeg"
+headcolor: "060606"
+github: roman91DE
+date: "`r format(Sys.time(), '%d %m %Y')`"
+lang: "de"
+output: 
+  vitae::awesomecv:
+  page_total: false
+  show_footer: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+Sys.setlocale("LC_TIME", "de_DE.UTF-8")
+library(vitae)
+```
+
+
+# Über mich
+
+```{r}
+library(tibble)
+
+df_aboutme = read.csv("../data_de/aboutme.csv", sep="?", quote = "\"")
+
+df_aboutme  %>%
+  detailed_entries(Stärken)
+```
+
+# Ausbildung
+
+```{r}
+library(tibble)
+
+df_education = read.csv("../data_de/education.csv", sep="?", quote = "\"")
+
+df_education  %>%
+  detailed_entries(Abschluss, Jahr, Institution, Ort)
+```
+
+# Berufserfahrung
+
+```{r}
+library(tibble)
+
+df_work = read.csv("../data_de/work.csv", sep="?", quote = "\"")
+
+df_work  %>%
+  detailed_entries(Tätigkeit, Jahr, Institution, Ort)
+```
+
+# Akademische Arbeiten
+
+```{r}
+library(tibble)
+
+df_thesis = read.csv("../data_de/thesis.csv", sep="?", quote = "\"")
+
+df_thesis  %>%
+  detailed_entries(Fachbereich,Link,Thema,Art)
+```
+
+
