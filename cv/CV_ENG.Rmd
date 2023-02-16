@@ -51,18 +51,19 @@ library(tibble)
 df_work = read.csv("../data_eng/work.csv", sep="?", quote = "\"")
 
 df_work  %>%
-  detailed_entries(Tätigkeit, Jahr, Institution, Ort)
+  detailed_entries(Profession, Year, Institution, Place)
 ```
 
-# Akademische Arbeiten
+# Academic Projects
 
 ```{r}
 library(tibble)
 
-df_thesis = read.csv("../data_de/thesis.csv", sep="?", quote = "\"")
+df_thesis = read.csv("../data_eng/thesis.csv", sep="?", quote = "\"")
 
 df_thesis  %>%
-  detailed_entries(Fachbereich,Link,Thema,Art)
+  detailed_entries(Chair, URL, Topic, Project)
+# Fachbereich,Link,Thema,Art
 ```
 
 
