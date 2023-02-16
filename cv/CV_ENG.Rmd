@@ -1,8 +1,6 @@
 ---
-name: "Hoehn,"
-surname: "Roman"
+name: "Roman Höhn"
 position: "B.Sc. Business Education"
-# qualifications: "B.Sc. Wirtschaftspädagogik"
 address: "Roedelstueck 26, 55129 Mainz"
 phone: "Mobile: +49 178 4076394"
 email: "rohoehn123@gmail.com"
@@ -10,6 +8,7 @@ profilepic: "../data_de/pic.jpeg"
 headcolor: "060606"
 github: roman91DE
 date: "`r format(Sys.time(), '%B %Y')`"
+lang: "eng"
 output: 
   vitae::awesomecv:
   page_total: false
@@ -22,34 +21,34 @@ library(vitae)
 ```
 
 
-# Über mich
+# About Me
 
 ```{r}
 library(tibble)
 
-df_aboutme = read.csv("../data_de/aboutme.csv", sep="?", quote = "\"")
+df_aboutme = read.csv("../data_eng/aboutme.csv", sep="?", quote = "\"")
 
 df_aboutme  %>%
-  detailed_entries(Stärken)
+  detailed_entries(Strenghts)
 ```
 
-# Ausbildung
+# Education
 
 ```{r}
 library(tibble)
 
-df_education = read.csv("../data_de/education.csv", sep="?", quote = "\"")
+df_education = read.csv("../data_eng/education.csv", sep="?", quote = "\"")
 
 df_education  %>%
-  detailed_entries(Abschluss, Jahr, Institution, Ort)
+  detailed_entries(Degree, Year, Institution, Place)
 ```
 
-# Berufserfahrung
+# Professional Experience 
 
 ```{r}
 library(tibble)
 
-df_work = read.csv("../data_de/work.csv", sep="?", quote = "\"")
+df_work = read.csv("../data_eng/work.csv", sep="?", quote = "\"")
 
 df_work  %>%
   detailed_entries(Tätigkeit, Jahr, Institution, Ort)
