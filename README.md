@@ -4,5 +4,5 @@ This is a repository for my personal CV built with the R package [`vitae`](https
 
 ## Docs available:
 
-* German CV: `./cv/CV_DE.pdf`
+* German CV: (`CV_DE.pdf`)[https://github.com/roman91DE/lebenslauf/blob/master/cv/CV_DE.pdf]
 * English CV: `./cv/CV_ENG.pdf`
