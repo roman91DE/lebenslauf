@@ -2,7 +2,7 @@
 name: "Roman Höhn"
 position: "M.Sc. Wirtschaftspädagogik"
 address: "Roedelstueck 26, 55129 Mainz"
-phone: "Mobil: +49 178 4076394"
+phone: "+49 178 4076394"
 email: "rohoehn123@gmail.com"
 profilepic: "../data_de/pic.jpeg"
 headcolor: "060606"
@@ -55,7 +55,7 @@ df_work  %>%
   detailed_entries(Tätigkeit, Jahr, Institution, Ort)
 ```
 
-# Akademische Arbeiten
+# Abschlussarbeiten
 
 ```{r}
 library(tibble)
