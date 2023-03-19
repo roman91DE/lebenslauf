@@ -1,6 +1,6 @@
 ---
 name: "Roman Höhn"
-position: "B.Sc. Business Education"
+position: "M.Sc. Business Education"
 address: "Roedelstueck 26, 55129 Mainz"
 phone: "Mobile: +49 178 4076394"
 email: "rohoehn123@gmail.com"

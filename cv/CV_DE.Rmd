@@ -1,6 +1,6 @@
 ---
 name: "Roman Höhn"
-position: "B.Sc. Wirtschaftspädagogik"
+position: "M.Sc. Wirtschaftspädagogik"
 address: "Roedelstueck 26, 55129 Mainz"
 phone: "Mobil: +49 178 4076394"
 email: "rohoehn123@gmail.com"
