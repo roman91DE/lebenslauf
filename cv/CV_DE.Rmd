@@ -7,7 +7,7 @@ email: "rohoehn123@gmail.com"
 profilepic: "../data_de/pic.jpeg"
 headcolor: "060606"
 github: roman91DE
-date: "`r format(Sys.time(), '%d %m %Y')`"
+date: "`r format(Sys.time(), '%B %Y')`"
 lang: "de"
 output: 
   vitae::awesomecv:
