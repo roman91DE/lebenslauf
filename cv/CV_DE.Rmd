@@ -66,4 +66,16 @@ df_thesis  %>%
   detailed_entries(Fachbereich,Link,Thema,Art)
 ```
 
+# Sonstiges
+
+```{r}
+library(tibble)
+
+df_misc = read.csv("../data_de/misc.csv", sep="?", quote = "\"")
+
+df_misc  %>%
+  detailed_entries(Fähigkeit)
+```
+
+
 
