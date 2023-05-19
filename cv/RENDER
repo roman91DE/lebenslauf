@@ -1,0 +1,4 @@
+#!/bin/bash
+
+Rscript -e "rmarkdown::render('CV_DE.Rmd')"
+Rscript -e "rmarkdown::render('CV_ENG.Rmd')"
