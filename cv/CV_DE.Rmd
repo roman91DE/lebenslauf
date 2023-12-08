@@ -4,7 +4,7 @@ position: "M.Sc. Wirtschaftspädagogik"
 address: "Roedelstueck 26, 55129 Mainz"
 phone: "+49 178 4076394"
 email: "rohoehn123@gmail.com"
-profilepic: "../data_de/pic.jpeg"
+profilepic: "../data_de/pic2.jpg"
 headcolor: "060606"
 github: roman91DE
 date: "`r format(Sys.time(), '%B %Y')`"
@@ -66,16 +66,16 @@ df_thesis  %>%
   detailed_entries(Fachbereich,Link,Thema,Art)
 ```
 
-# Sonstiges
+<!-- # Sonstiges -->
 
-```{r}
-library(tibble)
+<!-- ```{r} -->
+<!-- library(tibble) -->
 
-df_misc = read.csv("../data_de/misc.csv", sep="?", quote = "\"")
+<!-- df_misc = read.csv("../data_de/misc.csv", sep="?", quote = "\"") -->
 
-df_misc  %>%
-  detailed_entries(Fähigkeit)
-```
+<!-- df_misc  %>% -->
+<!--   detailed_entries(Fähigkeit) -->
+<!-- ``` -->
 
 
 
