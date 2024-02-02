@@ -7,6 +7,7 @@ email: "rohoehn123@gmail.com"
 profilepic: "../data_de/pic2.jpg"
 headcolor: "060606"
 github: roman91DE
+linkedin: roman-hoehn-893a48280
 date: "`r format(Sys.time(), '%B %Y')`"
 lang: "de"
 output: 
