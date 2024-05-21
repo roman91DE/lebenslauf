@@ -12,6 +12,8 @@ date: "`r format(Sys.time(), '%B %Y')`"
 lang: "de"
 output: 
   vitae::awesomecv:
+    latex_engine: pdflatex
+    keep_tex: true
     page_total: false
 ---
 

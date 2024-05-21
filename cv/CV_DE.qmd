@@ -1,0 +1,81 @@
+---
+title: "Roman Höhn"
+author: "M.Sc. Wirtschaftspädagogik"
+date: "`r format(Sys.time(), '%B %Y')`"
+lang: "de"
+toc: false
+format:
+  pdf:
+    documentclass: article
+    latex-engine: pdflatex
+    keep-tex: true
+    keep-intermediate-files: true
+    number-sections: false
+    include-in-header:
+      - text: |
+          \usepackage{graphicx}
+          \usepackage{xcolor}
+          \usepackage{fontawesome}
+      - text: |
+          \definecolor{headcolor}{HTML}{060606}
+          \newcommand{\header}[1]{\color{headcolor}\textbf{#1}}
+      - text: |
+          \titleformat*{\section}{\Large\bfseries\color{headcolor}}
+          \titleformat*{\subsection}{\large\bfseries\color{headcolor}}
+    include-after-body:
+      - text: |
+          \begin{center}
+          \includegraphics[width=0.2\textwidth]{../data_de/pic2.jpg}
+          \end{center}
+---
+
+\begin{center}
+\includegraphics[width=0.2\textwidth]{../data_de/pic2.jpg}
+\end{center}
+
+\begin{center}
+\header{Roman Höhn} \\
+M.Sc. Wirtschaftspädagogik \\
+Roedelstueck 26, 55129 Mainz \\
++49 178 4076394 \\
+\href{mailto:rohoehn123@gmail.com}{rohoehn123@gmail.com} \\
+\faGithub\ \href{https://github.com/roman91DE}{roman91DE} \\
+\faLinkedin\ \href{https://www.linkedin.com/in/roman-hoehn-893a48280}{roman-hoehn-893a48280}
+\end{center}
+
+# Über mich
+
+```{python}
+import pandas as pd
+
+df_aboutme = pd.read_csv("../data_de/aboutme.csv", sep="?", quotechar='"')
+print(df_aboutme.to_markdown(index=False))
+```
+
+# Ausbildung
+
+```{python}
+df_education = pd.read_csv("../data_de/education.csv", sep="?", quotechar='"')
+print(df_education.to_markdown(index=False))
+```
+
+# Berufserfahrung
+
+```{python}
+df_work = pd.read_csv("../data_de/work.csv", sep="?", quotechar='"')
+print(df_work.to_markdown(index=False))
+```
+
+# Zertifikate
+
+```{python}
+df_cert = pd.read_csv("../data_de/cert.csv", sep="?", quotechar='"')
+print(df_cert.to_markdown(index=False))
+```
+
+# Abschlussarbeiten
+
+```{python}
+df_thesis = pd.read_csv("../data_de/thesis.csv", sep="?", quotechar='"')
+print(df_thesis.to_markdown(index=False))
+```

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.2)  20 MAY 2024 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.2)  21 MAY 2024 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -13,14 +13,14 @@ Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2024basic/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count184
-\c@section=\count185
-\c@subsection=\count186
-\c@subsubsection=\count187
-\c@paragraph=\count188
-\c@subparagraph=\count189
-\c@figure=\count190
-\c@table=\count191
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
@@ -47,12 +47,12 @@ Enter file name:
 l.54 \RequirePackage
                     {ragged2e}^^M 
 Here is how much of TeX's memory you used:
- 313 strings out of 476290
- 4176 string characters out of 5789829
- 1917839 words of memory out of 5000000
- 22460 multiletter control sequences out of 15000+600000
- 558077 words of font info for 37 fonts, out of 8000000 for 9000
+ 312 strings out of 475567
+ 4189 string characters out of 5777890
+ 1925187 words of memory out of 5000000
+ 22547 multiletter control sequences out of 15000+600000
+ 558369 words of font info for 37 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 49i,0n,52p,123b,40s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 49i,0n,52p,123b,36s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-No pages of output.
+!  ==> Fatal error occurred, no output PDF file produced!
