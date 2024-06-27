@@ -84,26 +84,6 @@
 
 
 % Pandoc CSL macros
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{2em}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
-  % set entry spacing
-  \ifnum #2 > 0
-  \setlength{\parskip}{#2\baselineskip}
-  \fi
- }%
- {}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\honortitlestyle{#1}}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\honordatestyle{#1}}}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 \begin{document}
 
@@ -115,7 +95,7 @@
 % Leave any of these blank if they are not needed
 % 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
 \makecvfooter
-  {May 2024}
+  {June 2024}
     {Roman Höhn~~~·~~~Curriculum Vitae}
   {\thepage}
 
@@ -127,22 +107,10 @@
 
 
 
-\subsection{Über mich}\label{uxfcber-mich}
-
 \begin{cventries}
-    \cventry{Starker Studienfokus auf Wirtschaftsinformatik und Data Science}{}{}{}{}\vspace{-4.0mm}
-    \cventry{Erfahrener Programmierer insb. in den Sprachen Python, SQL und Java}{}{}{}{}\vspace{-4.0mm}
-    \cventry{Erfahren im Umgang mit State of the Art Entwicklungstools wie z.B. Git, Jira und Confluence}{}{}{}{}\vspace{-4.0mm}
-    \cventry{Motivation und schnelle Auffassungsgabe beim Einarbeiten in neue Technologien und Frameworks}{}{}{}{}\vspace{-4.0mm}
-\end{cventries}
-
-\section{Ausbildung}\label{ausbildung}
-
-\begin{cventries}
-    \cventry{Master of Science - Wirtschaftspädagogik (Zweitfach: Management and Economics)}{Johannes Gutenberg-Universität}{Mainz, Deutschland}{2018-2023}{}\vspace{-4.0mm}
-    \cventry{Bachelor of Science - Wirtschaftspädagogik (Zweitfach: Unternehmensrechnung/Controlling)}{ Johannes Gutenberg-Universität}{ Mainz, Deutschland}{2014-2018}{}\vspace{-4.0mm}
-    \cventry{Kaufmännische Ausbildung - Bürokaufmann}{A. Panzer GmbH}{Wiesbaden, Deutschland}{2012-2014}{}\vspace{-4.0mm}
-    \cventry{Allgemeine Hochschulreife}{Martin-Niemöller-Schule}{Wiesbaden, Deutschland}{2007-2010}{}\vspace{-4.0mm}
+    \cventry{Umfassende Kenntnisse in Python, SQL und Bash. Praktische Erfahrung in der Arbeit mit Big Data Technologien wie Hadoop und Spark sowie der Automatisierung unterschiedlichster Prozesse.}{Programmierkenntnisse}{}{}{}\vspace{-4.0mm}
+    \cventry{Studienfokus auf Wirtschaftsinformatik und Data Science. Berufserfahrung in der Entwicklung und dem Betrieb von Machine Learning Modellen, der Datenverarbeitung sowie der Analyse und Visualisierung von komplexen Datenbeständen. Versiert im Einsatz von modernen Entwicklungstools wie Git, Jira und Confluence.}{Erfahrungen}{}{}{}\vspace{-4.0mm}
+    \cventry{Neugier, Motivation und schnelle Auffassungsgabe für neue Technologien und Frameworks. Freude an interdisziplinärerem Austausch und Kommunikation}{Softskills}{}{}{}\vspace{-4.0mm}
 \end{cventries}
 
 \section{Berufserfahrung}\label{berufserfahrung}
@@ -154,11 +122,21 @@
     \cventry{Wissenschaftliche Hilfskraft mit Abschluss}{Johannes Gutenberg-Universität}{Mainz, Deutschland, }{2018-2019}{}\vspace{-4.0mm}
 \end{cventries}
 
+\section{Ausbildung}\label{ausbildung}
+
+\begin{cventries}
+    \cventry{Master of Science - Wirtschaftspädagogik (Zweitfach: Management and Economics)}{Johannes Gutenberg-Universität}{Mainz, Deutschland}{2018-2023}{}\vspace{-4.0mm}
+    \cventry{Bachelor of Science - Wirtschaftspädagogik (Zweitfach: Unternehmensrechnung/Controlling)}{ Johannes Gutenberg-Universität}{ Mainz, Deutschland}{2014-2018}{}\vspace{-4.0mm}
+    \cventry{Kaufmännische Ausbildung - Bürokaufmann}{A. Panzer GmbH}{Wiesbaden, Deutschland}{2012-2014}{}\vspace{-4.0mm}
+    \cventry{Allgemeine Hochschulreife}{Martin-Niemöller-Schule}{Wiesbaden, Deutschland}{2007-2010}{}\vspace{-4.0mm}
+\end{cventries}
+
 \section{Zertifikate}\label{zertifikate}
 
 \begin{cventries}
     \cventry{IBM/Coursera}{IBM Data Engineering Professional Certificate}{}{https://www.credly.com/users/roman-hohn/badges}{}\vspace{-4.0mm}
 \end{cventries}
+\newpage
 
 \section{Abschlussarbeiten}\label{abschlussarbeiten}
 

@@ -12,7 +12,6 @@ date: "`r format(Sys.time(), '%B %Y')`"
 lang: "de"
 output: 
   vitae::awesomecv:
-    latex_engine: pdflatex
     keep_tex: true
     page_total: false
 ---
@@ -26,21 +25,10 @@ library(tibble)
 ```
 
 
-## Über mich
-
 ```{r echo=FALSE}
 df_aboutme = read.csv("../data_de/aboutme.csv", sep="?", quote = "\"")
 df_aboutme %>%
-  detailed_entries(Stärken)
-
-```
-
-# Ausbildung
-
-```{r}
-df_education = read.csv("../data_de/education.csv", sep="?", quote = "\"")
-df_education %>%
-  detailed_entries(Abschluss, Jahr, Institution, Ort)
+  detailed_entries(Beschreibung,a,Kategorie)
 
 ```
 
@@ -53,6 +41,16 @@ df_work %>%
 
 ```
 
+# Ausbildung
+
+```{r}
+df_education = read.csv("../data_de/education.csv", sep="?", quote = "\"")
+df_education %>%
+  detailed_entries(Abschluss, Jahr, Institution, Ort)
+
+```
+
+
 # Zertifikate
 
 ```{r}
@@ -61,6 +59,7 @@ df_cert %>%
   detailed_entries(Institution, Link, Titel)
 
 ```
+\newpage
 
 # Abschlussarbeiten
 
