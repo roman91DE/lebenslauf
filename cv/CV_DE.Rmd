@@ -56,7 +56,7 @@ df_education %>%
 ```{r}
 df_cert = read.csv("../data_de/cert.csv", sep="?", quote = "\"")
 df_cert %>%
-  detailed_entries(Institution, Link, Titel)
+  detailed_entries(Institution, Jahr, Titel, Ort)
 
 ```
 \newpage
