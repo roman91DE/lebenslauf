@@ -60,7 +60,6 @@ df_cert %>%
   detailed_entries(Institution, Jahr, Titel, Ort)
 
 ```
-\newpage
 
 # Abschlussarbeiten
 
